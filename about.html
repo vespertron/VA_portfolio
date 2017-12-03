@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="Eng">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="web developer portfolio, deverloper, portfolio">
+    <meta name="author" content="Vesper Annstas">
+    <title>About Vesper</title>
+    <link rel="stylesheet" media="screen" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" media="only screen and (min-width: 320px) and (max-width: 568px)" type="text/css" href="css/mobile.css">
+
+    <link rel="stylesheet" media="only screen and (min-width: 768px) and (max-width: 980px" type="text/css" href="css/tablet.css">
+  </head>
+
+  <body>
+    <div id="output_width"></div>
+
+    <div id="container">
+      <header>
+        <nav>
+          <img id="logo" src="images/logo.png" alt="VA" />
+          <a id="about" href="about.html">Vesper Annstas</a>
+          <ul>
+            <li><a class="animate" href="index.html">Home</a></li>
+            <li><a class="animate" href="projects.html">Projects</a></li>
+            <li><a class="animate" href="thoughts.html">Thoughts</a></li>
+            <li><a class="animate" href="how-to.html">How To</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="main">
+        <div id="content">
+          <article class="art1">
+            <header class="art-header">
+              <h2 class="title"><a href="#">About Vesper</a></h2>
+              <span>If it improves lives and involves code, I'm on board!</span>
+            </header>
+            <p>Donec et nisi dictum felis, sollicitudin, congue Heydon&#8482;. Donec et nisi dictum felis sollicitudin congue. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh, <a href='#'>iaculis pretium</a> sem orci aliquet mauris. </p>
+            <p>Lorem ipsum dolor sit amet, consectetur <em>adipiscing elit</em>. Fusce ac sodales <code>.generate()</code> magna. Donec tempus tempus tellus, ac lacinia turpis mattis ac. Suspendisse potenti cras molestie, risus a enim convallis vitae luctus libero lacinia. Aliquam nisl enim, tristique tempus placerat at, posuere in lectus. </p>
+            <a class="animate" href="#">Read more</a>
+          </article>
+        </div>
+      </div>
+
+      <aside id="sidebar">
+        <div class="block">
+          <h2>Top Sidebar</h2>
+          <p>Nulla vel magna sit amet dui <a href='#'>lobortis</a> commodo vitae vel nulla. Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh (iaculis pretium sem orci aliquet mauris). <strong>Donec a congue leo. </strong>Maecenas sit <em>amet tellus</em> nec mi gravida posuere non <a href='#'>pretium magna</a>. Cras molestie risus a enim convallis vitae luctus libero lacinia. Nulla lobortis tempus commodo. </p>
+        </div>
+        <div class="block">
+          <h2>Mid Sidebar</h2>
+          <p>Sed dapibus, lectus sit amet adipiscing egestas, mauris est viverra nibh (iaculis pretium sem orci aliquet mauris). <strong>Donec a congue leo. </strong>Maecenas sit <em>amet tellus</em> nec mi gravida posuere non <a href='#'>pretium magna</a>. Cras molestie risus a enim convallis vitae luctus libero lacinia. Nulla lobortis tempus commodo. </p>
+        </div>
+        <div class="block">
+          <h2>Bottom Sidebar</h2>
+          <p><strong>Donec a congue leo. </strong>Maecenas sit <em>amet tellus</em> nec mi gravida posuere non <a href='#'>pretium magna</a>. Cras molestie risus a enim convallis vitae luctus libero lacinia. Nulla lobortis tempus commodo. </p>
+        </div>
+      </aside>
+
+      <div id="contact">
+        <h1>Say Hi!</h1>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Email</label>
+          <input type="text" id="email" name="emai" placeholder="Your email..">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Send">
+        </form>
+      </div>
+
+      <footer>
+        <p>Copyright &copy; 2018 Vesper Annstas</p>
+        <a href="#">Privacy</a>
+      </footer>
+    </div>
+
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <script>
+      var showWidth = 1;
+
+      if(showWidth == 1) {
+        $(document).ready(function() {
+            $(window).resize(function() {
+              var width = $(window).width();
+              document.getElementById('output_width').innerHTML="Window Width:"+width.toString();
+            });
+          });
+      }
+    </script>
+  </body>
+</html>

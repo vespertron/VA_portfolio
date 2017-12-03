@@ -1,0 +1,348 @@
+/* all */
+body {
+	background: #fafafa;
+	font-size: 87.5%;
+	font-family: 'Roboto', sans-serif;
+	color: #444;
+	line-height: 1.7em;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: #dcdcdc;
+}
+
+a:hover {
+	color: #888888;
+}
+
+.clr {
+	clear: both;
+}
+
+#container {
+	width: 95%;
+	margin: 0 auto;
+	overflow: auto;
+	clear: both;
+}
+
+nav {
+	display: block;
+	height: 100px;
+	transition: width 2s, height 1s;
+}
+
+nav #logo {
+	display: block;
+	max-width: 75px;
+	margin: auto;
+}
+
+nav ul {
+	display: block;
+	list-style: none;
+	padding: 0;
+	margin: auto;
+	text-align: center;
+	transition: 1.5s;
+}
+
+nav li {
+  display: inline;
+  font-family: 'Roboto Condensed';
+  letter-spacing: 8px;
+  position: relative;
+}
+
+
+
+svg {
+	height: 50px;
+	width: 160px;
+}
+
+.svg-wrapper {
+	height: 60px;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 200px;
+}
+
+.shape {
+	height: 50px;
+	width: 160px;
+	fill: transparent;
+	stroke-dasharray: 140 540;
+	stroke-dashoffset: -474;
+	stroke-width: 8px;
+	stroke: #1d1f20;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #d3d3d3;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1d1f20;
+    color: #d3d3d3;
+}
+
+footer {
+	background: #dcdcdc;
+	height: 80px;
+	border: 1px solid #fff;
+	margin-top: 10px;
+	text-align: center;
+	border-radius: 5px;
+}
+
+footer a {
+	color: #1d1f20;
+	margin: 0;
+	padding: 10px 0 0;
+}
+
+
+/* index */
+#VA {
+	height: 100%;
+	margin: 0;
+}
+
+.left {
+	width: 50%;
+	height: 300px;
+	float: left;
+}
+
+.right {
+	margin-left: 50%;
+	height: 300px;
+}
+
+
+/* Projects */
+
+
+/* Thoughts, How To */
+
+#content {
+	width: 70%;
+	float: left;
+	overflow: auto;
+	transition: width 1s;
+}
+
+#content article {
+	height: 400px;
+	border-radius: 5px;
+	background: #fff;
+	overflow: auto;
+	padding: 10px 20px;
+	margin-top: 10px;
+}
+
+#content article span {
+	font-style: italic;
+	color: #000;
+}
+
+#readmore {
+	display: block;
+	margin-top: -150px;
+	margin-right: 0;
+}
+
+#sidebar {
+	width: 30%;
+	float: left;
+}
+
+#sidebar .block {
+	border-radius: 5px;
+	background: #fff;
+	overflow: auto;
+	padding: 10px 15px;
+	margin: 10px 0 0 10px;
+}
+
+/* Laptop (Portrait and Landscape) */
+@media only screen and (min-width: 960px) {
+	nav ul {
+		margin-top: -40px;
+		transition: 1.5s;
+	}
+
+	nav li:nth-child(1), nav li:nth-child(2) {
+		float: left;
+		padding-left: 5%;
+	}
+	nav li:nth-child(3), nav li:nth-child(4) {
+    	float: right;
+    	padding-right: 5%;
+	}
+}
+
+/* Tablet/iPads (Portrait and Landscape) */
+@media only screen and (min-width: 768px) and (max-width: 960px) {
+	nav ul {
+		margin-top: -40px;
+		transition: 1.5s;
+	}
+
+	nav li {
+		letter-spacing: 6px;
+	}
+
+	nav li:nth-child(1), nav li:nth-child(2) {
+		float: left;
+	}
+
+	nav li:nth-child(3), nav li:nth-child(4) {
+    	float: right;
+	}
+
+	#content {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block {
+		margin-left: 0;
+	}
+
+}
+
+/* Smaller Tablets (Portrait and Landscape) */
+@media only screen and (min-width: 569px) and (max-width: 767px) {
+	nav ul {
+		margin-top: -40px;
+		transition: 1.5s;
+	}
+
+	nav li {
+		letter-spacing: 4px;
+	}
+
+	nav li:nth-child(1), nav li:nth-child(2) {
+		float: left;
+		text-align: left;
+	}
+
+	nav li:nth-child(3), nav li:nth-child(4) {
+		float: right;
+    	text-align: right;
+	}
+
+	svg {
+		width: 100px;
+	}
+
+	.shape {
+		width: 100px;
+	}
+
+	#content {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block {
+		margin-left: 0;
+	}
+}
+
+/* Smartphones (Portrait and Landscape) */
+@media only screen and (min-width: 240px) and (max-width: 568px) {
+	nav {
+		height: auto;
+		display: block;
+		
+		width: 99%;
+	}
+
+	nav ul {
+		margin-top: 45px;
+		padding: 2% 1%;
+		text-align: center;
+		width: 98%;
+		transition: 1s;
+	}
+
+	nav li {
+		float: none;
+		display: block;
+		margin-right: 0;
+		width: 100%;
+	}
+
+	nav li a {
+		margin-bottom: 2px;
+		text-align: center;
+	}
+
+	nav li a:hover, .main-header .main-nav li a:active {
+		display: block;
+	}
+
+	#content {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar {
+		width: 100%;
+		float: none;
+	}
+
+	#sidebar .block {
+		margin-left: 0;
+	}
+}
