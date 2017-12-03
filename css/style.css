@@ -5,7 +5,6 @@ body {
 	font-family: 'Roboto', sans-serif;
 	color: #444;
 	line-height: 1.7em;
-	text-align: center;
 }
 
 a {
@@ -25,7 +24,6 @@ a:hover {
 	width: 95%;
 	margin: 0 auto;
 	overflow: auto;
-	clear: both;
 }
 
 nav {
@@ -38,6 +36,7 @@ nav #logo {
 	display: block;
 	max-width: 75px;
 	margin: auto;
+	clear: both;
 }
 
 nav ul {
@@ -55,7 +54,6 @@ nav li {
   letter-spacing: 8px;
   position: relative;
 }
-
 
 
 svg {
@@ -142,8 +140,7 @@ footer a {
 
 /* index */
 #VA {
-	height: 100%;
-	margin: 0;
+	max-width: 110%;
 }
 
 .left {
@@ -157,6 +154,12 @@ footer a {
 	height: 300px;
 }
 
+.one .right, .two .left {
+	font-size: 2em;
+	line-height: 1.5em;
+	letter-spacing: 4px;
+	padding-top: 50px;
+}
 
 /* Projects */
 
@@ -268,12 +271,10 @@ footer a {
 
 	nav li:nth-child(1), nav li:nth-child(2) {
 		float: left;
-		text-align: left;
 	}
 
 	nav li:nth-child(3), nav li:nth-child(4) {
 		float: right;
-    	text-align: right;
 	}
 
 	svg {
