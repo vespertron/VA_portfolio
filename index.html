@@ -19,7 +19,7 @@
   	<div id="container">
   	  <header>
   	  	<nav>
-  	  	  <a href="about.html"><img id="logo" src="images/logo.png" alt="VA" /></a>
+  	  	  <a href="about.html"><img class="logo" src="images/logo.png" alt="VA" /></a>
 	  	    <ul>
 	  	  	  <li>
   	  	  	  <div class="svg-wrapper">
@@ -72,36 +72,38 @@
   	  	  </ul>
   	    </nav>
   	  </header>
-  	  <div class="one">
-  	    <div class="left">
-   	      <img id="VA" src="images/VA.png" alt="VA" />
-   	    </div>
-   	    <div class="right">
-  	      <p>Can I take some decisions off your plate?</p>
+      <div id="main">
+    	  <div class="one">
+    	    <div class="left">
+     	      <img id="VA" src="images/VA.png" alt="VA" />
+     	    </div>
+     	    <div class="right">
+    	      <p>Can I take some decisions off your plate?</p>
+    	    </div>
+     	  </div>
+  	    <div class="two">
+  	      <div class="left">
+    	      <p>automation + visibility = easier choices</p>
+    	    </div>
+    	    <div class="right">
+    	      <p>Nunc <a href='#'>iaculis risus</a> vel orci ornare dignissim sed vitae nulla. Donec tempus tempus tellus, ac <abbr title='Hypertext Markup Language'>HTML</abbr> lacinia turpis mattis ac. Aliquam <del>tincidunt velit</del> sit amet ante hendrerit tempus. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Donec et nisi dictum <a href='#'>felis sollicitudin</a> congue. Cras molestie risus a <q cite='http://www.heydonworks.com'>enim convallis vitae</q> luctus libero lacinia. Aliquam tincidunt velit sit (amet ante hendrerit tempus). </p>
+    	    </div>
   	    </div>
-   	  </div>
-	    <div class="two">
-	      <div class="left">
-  	      <p>automation + visibility = easier choices</p>
+  	    <div class="contact">
+  	      <h1>Say Hi!</h1>
+  	      <form action="/action_page.php">
+  		      <label for="fname">First Name</label>
+  		      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  		      <label for="lname">Last Name</label>
+  		      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  		      <label for="country">Email</label>
+  		      <input type="text" id="email" name="emai" placeholder="Your email..">
+  		      <label for="message">Message</label>
+  		      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
+  		      <input type="submit" value="Send">
+  		    </form>
   	    </div>
-  	    <div class="right">
-  	      <p>Nunc <a href='#'>iaculis risus</a> vel orci ornare dignissim sed vitae nulla. Donec tempus tempus tellus, ac <abbr title='Hypertext Markup Language'>HTML</abbr> lacinia turpis mattis ac. Aliquam <del>tincidunt velit</del> sit amet ante hendrerit tempus. Duis sagittis, est sit amet gravida tristique, purus lectus venenatis urna, id molestie magna risus ut nunc. Donec et nisi dictum <a href='#'>felis sollicitudin</a> congue. Cras molestie risus a <q cite='http://www.heydonworks.com'>enim convallis vitae</q> luctus libero lacinia. Aliquam tincidunt velit sit (amet ante hendrerit tempus). </p>
-  	    </div>
-	    </div>
-	    <div class="contact">
-	      <h1>Say Hi!</h1>
-	      <form action="/action_page.php">
-		      <label for="fname">First Name</label>
-		      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-		      <label for="lname">Last Name</label>
-		      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-		      <label for="country">Email</label>
-		      <input type="text" id="email" name="emai" placeholder="Your email..">
-		      <label for="message">Message</label>
-		      <textarea id="message" name="message" placeholder="Write something.." style="height:200px"></textarea>
-		      <input type="submit" value="Send">
-		    </form>
-	    </div>
+      </div>
       <footer>
         <p>Copyright &copy; 2018 Vesper Annstas</p>
         <a href="privacy.html">Privacy</a>
