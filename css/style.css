@@ -115,6 +115,10 @@ svg {
 	max-width: 100%;
 }
 
+.wrapper {
+	position: relative;
+}
+
 .left {
 	width: 50%;
 	height: 300px;
@@ -134,6 +138,10 @@ svg {
 	letter-spacing: 4px;
 	padding-top: 50px;
 	transition: 1s;
+}
+
+.two .right {
+	padding-top: 50px;
 }
 
 #content {
@@ -175,6 +183,7 @@ svg {
 	padding: 10px 15px;
 	margin: 10px 0 0 10px;
 }
+
 
 input[type=text], select, textarea {
     width: 100%;
@@ -344,6 +353,15 @@ footer a {
 		display: block;
 	}
 
+	.wrapper:before {
+		content: '';
+		float: right;
+		display: block;
+		width: 99%;
+		height: auto;
+		margin: 0 0 15px 15px;
+	}
+
 	#main .one .left {
 		float: none;
 		position: fixed;
@@ -351,6 +369,10 @@ footer a {
 		width: 95%;
 		z-index: 0;
 		transition: 1s;
+	}
+
+	#main .one, #main .two {
+		text-align: center;
 	}
 
 	#main .one .right {
@@ -361,7 +383,6 @@ footer a {
 		padding: 0;
 		width: 95%;
 		font-size: 1.5em;
-		text-align: center;
 		z-index: 10;
 		transition: 1s;
 	}
@@ -396,5 +417,9 @@ footer a {
 
 	#sidebar .block {
 		margin-left: 0;
+	}
+
+	.contact {
+		position: relative;
 	}
 }
