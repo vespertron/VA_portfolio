@@ -163,6 +163,10 @@ main {
 	margin: 10px 0 0 10px;
 }
 
+form {
+	position: relative;
+}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px; 
@@ -190,6 +194,7 @@ input[type=submit]:hover {
 
 footer {
 	display: block;
+	position: relative;
 	margin-top: 10px;
 	background: #dcdcdc;
 	height: 80px;
