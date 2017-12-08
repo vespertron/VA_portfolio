@@ -7,6 +7,10 @@ body {
 	text-align: left;
 }
 
+h1 {
+	text-align: center;
+}
+
 a {
 	text-decoration: none;
 	color: #dcdcdc;
@@ -114,13 +118,20 @@ main {
 #one, #two {
 	display:flex;
 	flex-wrap: wrap;
-	justify-content: center ; /* for horizontal aligning of child divs */
+	justify-content: center ;
 	align-items : center;
 }
 
 .left, .right {
 	width: 50%;
 	z-index: 999;
+}
+
+#one .right, #two .left {
+	line-height: 1.5em;
+	font-size: 2em;
+	letter-spacing: .2em;
+	text-align: center;
 }
 
 #content {
@@ -167,6 +178,21 @@ form {
 	position: relative;
 }
 
+fieldset {
+	border: 0;
+}
+
+.error {
+	color: red;
+}
+
+.success {
+	color: #ff9966;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px; 
@@ -178,7 +204,7 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-input[type=submit] {
+button[type=submit] {
     background-color: #d3d3d3;
     color: white;
     padding: 12px 20px;
@@ -187,7 +213,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
     background-color: #1d1f20;
     color: #d3d3d3;
 }
