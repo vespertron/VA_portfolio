@@ -20,6 +20,10 @@ a:hover {
 	color: #888888;
 }
 
+img {
+	max-width: 100%;
+}
+
 .clr {
 	clear: both;
 }
@@ -149,13 +153,23 @@ main {
 	left: 2em;
 	right: 2em;
 	background: #fff;
-	box-shadow: 0 0 4em 1.5em #444;
+	box-shadow: 0 0 4em 2em #444;
 	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.modal-close {
+	background: transparent;
+	position: absolute;
+	left: 2em;
+	top: 2em;
+	border: 0;
 }
 
 .article-header {
 	text-align: left;
 	padding: 5em 0;
+	margin-bottom: 2em;
 }
 
 .article-header:nth-of-type(1) {
@@ -165,7 +179,7 @@ main {
 }
 
 .article-title-box {
-	background: rgba(0, 0, 0, .85);
+	background: rgba(0, 0, 0, .75);
 	box-sizing: border-box;
 	padding: 3em;
 	color: #fff;
@@ -178,6 +192,33 @@ main {
 
 .article-subtitle {
 	font-size: 1.5rem;
+}
+
+.article-content {
+	text-align: left;
+	width: 95%;
+	margin: 0 auto;
+	padding-bottom: 2em;
+}
+
+.article-full-width {
+	width: 100vw;
+	max-width: initial;
+	margin: 2em calc(50% - 50vw);
+	height: 20vh;
+	object-fit: cover;
+}
+
+.article-pull-left {
+	width: 65%;
+	float: left;
+	margin-right: 2em; 
+}
+
+.article-pull-right {
+	width: 65%;
+	float: right;
+	margin-left: 2em; 
 }
 
 #content article {
@@ -363,6 +404,8 @@ footer a {
 		width: 100%;
 		float: none;
 	}
+
+
 
 	#sidebar {
 		width: 100%;
